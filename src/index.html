@@ -5,8 +5,8 @@ s<!doctype html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
-  <link href="output.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400;700&family=Montserrat&display=swap" rel="stylesheet">
+  <link href="../dist/output.css" rel="stylesheet">
 </head>
 <body class="max-w-[2000] mx-auto relative" x-data="{ open: false }">
     <div class="m-0 fixed px-10 py-5 top-0 h-18 bg-white z-50 flex flex-row justify-between w-full items-center">
@@ -39,44 +39,56 @@ s<!doctype html>
         
     </div>
     <section id="home" class=" min-h-screen flex flex-col justify-center items-center" >
-        <h2 class="p-10 border border-white text-4xl">FullStack FastAPI, React and MongoDB</h2>
-        <h3>Building Python web applications with the FARM stack</h3>
+        <h2 class="pt-4 text-4xl px-2">FullStack FastAPI, React and MongoDB</h2>
+        <h3 class="text-black font-thin my-3 text-2xl font-Fira ">Building Python web applications with the FARM stack</h3>
+        <div class=" bg-gray-200 p-1 text-justify rounded-xl m-2 shadow-xl">
         <p class="max-w-md text-sm p-4">This book is a complete zero-to-hero guide to the FARM stack. The author took
             the time to break down React hooks, FastAPI routes and file structure, and
             MongoDB to the point that someone from a non-programming background can
             understand it and get up and running.</p>
-            <p class=" font-bold font-Fira text-gray-500 text-sm">Eleke Great, Technical Reviewer</p>
-        <img src="./img/booksh.png" />
+            <p class=" font-bold font-Fira text-gray-500 text-sm text-center">Eleke Great, Technical Reviewer</p>
+        </div>
+        <div class="p-2 my-2">
+            <img class="w-full p-2 shadow-lg" src="./img/FARM Stack Cover .jpeg" />
+        </div>
+        
         <div class="container prose p-10">
-        <p class="my-3">Probably the best way to start using a new technology, or a new stack - a blend of technologies - is by
-            using it. I have written this book with a particular reader in mind: myself.</p>
-        <p class="my-3">While this is by no means a comprehensive guide to MongoDB or React - two mainstream technologies that have
+        <p class="my-3 text-sm md:text-base">Probably the best way to start using a new technology, or a new stack - a blend of technologies - is by
+            using it. I have written this book with a particular reader in mind: <span class="sad">myself</span>.</p>
+            <hr class=" bg-ftYellow my-3" />
+        <p class="my-3 text-sm md:text-base">While this is by no means a comprehensive guide to MongoDB or React - two mainstream technologies that have
             been around for some time, the book has another protagonist - fastAPI, a relatively young, but already mature 
             and battle tested Python-based asynchronous framework for building applications.
         </p>
-        <p class="my-3">The book takes a practical approach and tries to introduce the parts of the stack in a simple and 
+        <hr class=" bg-ftYellow my-3" />
+        <p class="my-3 text-sm md:text-base">The book takes a practical approach and tries to introduce the parts of the stack in a simple and 
             straightforward way, while gradually presenting features - MongoDB queries, drivers, simple React Hooks, 
             the FastAPI way of performing standard and not-so-standard web development tasks.
         </p>
-        <p class="my-3">
-            This book is aimed at web developers and analysts who desire to include the power of a modern asynchronous Python framework, a flexible data store and a powerful UI library mixed with the combination of two of the most important programming languages today into their web developers toolkit. The book would also prove useful for various beginners in the field of information presentation. The book requires a beginner-level understanding of Python and JavaScript programming, HTML and CSS.
+        <hr class=" bg-ftYellow my-3" />
+        <p class="my-3 text-sm md:text-base">
+            This book is aimed at <span class="bg-ftYellow">>web developers and analysts</span> who desire to include the power of a modern asynchronous Python framework, a flexible data store and a powerful UI library mixed with the combination of two of the most important programming languages today into their web developers toolkit. The book would also prove useful for various beginners in the field of information presentation. The book requires a beginner-level understanding of Python and JavaScript programming, HTML and CSS.
         </p>
         </div>
-        <div class="my-6 flex flex-row justify-between">
-            <a class="cta" href="/amazon">Buy on Packt</a>
-            <a class="cta" href="https://www.amazon.com/Modern-Web-Development-FARM-Stack-ebook/dp/B0B2DNQCBG">Buy on Amazon</a>
+        <div class="my-6 flex flex-col md:flex-row justify-between items-center">
+            <a class="cta" href="/amazon">Find the book on Packt</a>
+            <a class="cta" href="https://www.amazon.com/Modern-Web-Development-FARM-Stack-ebook/dp/B0B2DNQCBG">Find the book on Amazon</a>
         </div>
        
     </section>
 
-    <section id="chapters" class=" min-h-screen text-white bg-ftYellow flex flex-col justify-center items-center p-10" >
-        <h2 class="p-10 text-5xl">What's inside the book?</h2>
+    <section 
+        id="chapters" 
+        class=" min-h-screen text-white bg-ftYellow flex flex-col justify-center items-center p-2 md:p-10" >
+        <h2 class="p-10 text-5xl mt-8">What's inside the book?</h2>
  
-        <p class=" mx-auto max-w-prose text-lg">The book is aimed at giving the readers a basic, yet thorough understanding of the FARM stack components and 
-            of the possibilities offered by the framework. Here is a brief rundown of the chapters.</p>
-        <div class="grid lg:grid-cols-2 my-10">
+        <p class=" mx-auto text-lg">The book is aimed at giving the readers a basic, yet thorough understanding of the FARM stack components and 
+            of the possibilities offered by the framework.</p>
+            <hr class="w-1 bg-white" />
+            <p class=" mx-auto text-lg">Here is a brief rundown of the chapters.</p>
+        <div class="grid lg:grid-cols-2 my-6">
         <div class="chapter">
-            <h2>Chapter 1: Web Development and the FARM Stack</h2>
+            <h2 class=" text-sm">Chapter 1: Web Development and the FARM Stack</h2>
             <p>We try to make a case for this partticular type of stack - comparing
                 the FARM stack and its components to other, more popular, alternatives. And it makes sense!
             </p>
@@ -84,89 +96,65 @@ s<!doctype html>
         <div class="chapter">
             <h2>Chapter 2: Setting Up the Document Store with MongoDB</h2>
             <p>A rather thourough look at MongoDB - what it is, why it is almost perfect for some types of solutions and 
-                why it might not be the best fit for others. The chapter goes over CRUD operations (create, read, update, delete) 
-                and setting up MongoDB locally and on the cloud with Atlas. this chapter is rather self-sufficient as the basic knowledge 
-                acquired can be easily used with Node.js or other Python frameworks!
+                why it might not be the best fit for others.
             </p>
         </div>
         <div class="chapter">
             <h2>Chapter 3: Getting Started with FastAPI</h2>
-            <p>it is time to meet FastAPI - the coolest and brightest Python framework of our time! We go over standard 
-                REST verbs, such as GET, POST, PUT and DELETE, we pass query and path parameters, play with the request 
-                body and learn some overall useful stuff along the way. FastAPI shouldn't be intimidating after this one!
+            <p>It is time to meet FastAPI - the coolest and brightest Python framework of our time!  FastAPI shouldn't be intimidating after this one!
             </p>
         </div>
         <div class="chapter">
             <h2>Chapter 4: Setting Up a React Workflow</h2>
-            <p>React is a powerful UI library and this chapter doesn't try to teach you very much. It is just a means to an end - 
+            <p>React is a powerful UI library XXX - 
                 we go over what React achieves, the basic syntax, JSX and the creation of components and how to set up a new project.
                 Alright, we talk a bit about two of the most popular and arguably most important Hooks - the useState and the useEffect.
             </p>
         </div>
         <div class="chapter">
             <h2>Chapter 5: Building the Backend for Our Application</h2>
-            <p>We begin building a very simple but ful-fledged API: we start by setting up MongoDB, we create an instance 
-                of FastAPI and then we create our routes. Finally we deploy our app to Heroku. <span class="sad">Note:
-                at the time of writing this book, Heroku still offered a free plan. Now it seems that it is not the case anymore.
-                It is a bummer, but there are other options out there and Heroku could be well worth paying. 
-                </span> I certainly plan to update the code with a free provider since that was one of the main goals while writing 
-                the book - create simple, but complete apps, that can be hosted for free or at very cheap prices.
+            <p>We begin building a very simple but full-fledged API: we start by setting up MongoDB, we create an instance 
+                of FastAPI and then we create our routes. Finally we deploy our app.
             </p>
         </div>
         <div class="chapter">
             <h2>Chapter 6: Building the Frontend of the Application</h2>
-            <p>Now that we have a backend, it is time to connect it to a frontend. This chapter demonstrates a very simple 
-                React application featuring Tailwind CSS (our CSS framework of choice) and the latest version of the React Router 
-                - version 6. We create a single page app (SPA) that is able to talk (rather eloquently) to our simple FastAPI.
-                You might not like this approach, but I happen to love it - you create something small and simple (maybe even silly) but 
-                then you see it all connecting together and you can already picture something more complex. It works for me, at least.
+            <p>Now that we have a backend, it is time to connect it to a frontend. A React application featuring Tailwind CSS 
+                (our CSS framework of choice) and the latest version of the React Router 
+                - version 6.
             </p>
         </div>
         <div class="chapter">
             <h2>Chapter 7: Authentication and Authorization</h2>
-            <p>Soon you will find out that, no matter how simple or small your application is, chances are it will 
-                not be usable if it hasn't at least a way of knowing which user is which. I had a dilemma facing this one: 
-                should I be treating Auth0 or Firebase or some of these giants - or should I concentrate on rolling your own solution, 
-                even though chances are you wouldn't be able to use it anywhere in a serious real-life project? 
-                I opted for the latter as I believe that it is a much more instructive approach and it leaves you as a reader much more aware 
-                of the steps involved, the mechanisms and the potential risks. JWT tokens are a very popular solution and although 
-                we develop a rather simple variation of a JWT-based authentication system (for instance, there are no refresh tokens) 
-                the chapter should give you enough information so that in the future you can dive into JWT systems in other frameworks.
+            <p>JWT tokens are a very popular solution and although we develop a rather simple variation of
+                 a JWT-based authentication system the chapter should give you enough information so that 
+                 in the future you can dive into JWT systems in other frameworks.
             </p>
         </div>
         <div class="chapter">
             <h2>Chapter 8: Server-Side Rendering and Image Processing with FastAPI and Next.js</h2>
             <p>Here we tackle different real-life web development problems in a fun way!</p>
             <ol class=" list-disc">
-                <li>File uploads? Check!</li>
-                <li>Image processing? Both with Python (Pillow) and Cloduinary? Check!</li>
-                <li>Server-side rendering (SSR)? Static generation? Check!</li>
-                <li>The worlds most feature-rich frontend framework? You bet!</li>
-                <li>Next.js API routes? Authentications with <span class="sad">httpOnly</span> cookies? Check!</li>
-                <li>Deployment on Vercel? Check!</li>
+                <li>File uploads</li>
+                <li>Image processing</li>
+                <li>Server-side rendering (SSR)and static  generation</li>
+                <li>The worlds most feature-rich frontend framework - NextJS</li>
+                <li>Next.js API routes and authentication with <span class="sad">httpOnly</span> cookies?</li>
+                <li>Deployment on Vercel</li>
             </ol>
-            <p>Jokes aside, in this chapter we create a simple app that shows that FastAPI is very 
-                confortable in a universal role: image and file manipulation, playing nice with Next.js. 
-            We also get to use Vercel, an excellent deployment solution from the authors of Next.js. </p>
         </div>
         <div class="chapter">
             <h2>Chapter 9: Building a Data Visualization App with the FARM Stack</h2>
             <p>This is probably my favourite chapter, and certainly the one I've had the most fun writing.
-                FastAPI excels at working with different types of data and here we take it for a spin by building 
-                a simple, yet flexible admin dashboard. We also get to know SWR (stale while revalidate)
-                and the way it helps us fetch data from React, improving our UX. 
             </p>
-            <p>You will get to know Chart.js, an excellent charting library that hits a sweet spot between ease of use 
+            <p>You will get to know SWR - a better way of fetching data, Chart.js, an excellent charting library that hits a sweet spot between ease of use 
                 and customizability. We also get to send some emails, create documents and other fun stuff!</p>
         </div>
         <div class="chapter">
             <h2>Chapter 10: Caching with Redis and Deployment on Ubuntu (DigitalOcean)
                 and Netlify</h2>
             <p>
-                Continuing where we left off, we will learn to deploy our analytics app on an Ubuntu Server, 
-                using a rather cheap DigitalOcean droplet, using Uvicorn, Gunicorn and the mighty Nginx server. We will
-                also explore a caching solution with Redis and use Netlify, arguably the most popular deployment service, 
-                for our frontend. Good stuff!
+              It's time to deploy our analytics app on an Ubuntu Server - Uvicorn, Nginx, Netlify, Redis.
             </p>
             
         </div>
@@ -174,16 +162,15 @@ s<!doctype html>
         <div class="chapter">
             <h2>Chapter 11: Useful Resources and Project Ideas</h2>
             <p>
-                To close things off, the last chapter takes a lighter approach. Except for a few reccomandations or 
-                suggestions, the chapter includes some creative ideas for you (and me!) to test your FARM stack knowledge 
-                and creativity. I hope that I will be able to update this portion and maybe add numerous ideas, snippets or links!
+                To close things off, the chapter includes some creative ideas for you (and me!) to test your FARM stack knowledge 
+                and creativity.
             </p>
             
         </div>
         <div class="chapter">
             <h2>GitHub: Book Resources</h2>
-            <p>The GitHub repo for the book is located at <a href="">this link</a> and it should be updated with some 
-                additional info, regarding especially the <a href="">new Heroku situation</a>, as well as fixing errors.
+            <p>The GitHub repo for the book is located at <a href="https://github.com/PacktPublishing/Full-Stack-FastAPI-React-and-MongoDB">this link</a> and it should be updated with some 
+                additional info.
                 Please do not hesitate to let me know if you find errors, small ones, big ones or ways to make the code more 
                 illustrative or concise.
             </p>
@@ -193,10 +180,10 @@ s<!doctype html>
             <h2>What is <span class=" text-ftRed">not</span> inside</h2>
             <p>Writing really boils down to two things: what to write about and what to omit. This book is pretty opinionated
                 and doesn't include some topics that you would maybe expect to find in a FastAPI book, so I think that it is 
-                only fair to mention what is <span class="text-ftRed">not covered</span>:
+                only fair to mention what is <span class="sad">not covered</span>:
                 <ol class=" list-disc">
                     <li>SQL databases (because, you know... MongoDB)</li>
-                    <li>Jinja2 or any other Python templating system, becaouse we use React</li>
+                    <li>Jinja2 or any other Python templating system, because we use React</li>
                     <li>Other User-Interface frameworks</li>
                     <li>While we do embed a simple Random Forest regressor, machine learning is not covered</li>
                     <li>Deployment on Docker containers (see above)</li>
@@ -231,41 +218,60 @@ s<!doctype html>
         </div>
         <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-3 md:gap-8 lg:gap-12">
             <div class="logo">
-                <img src="./logo/fastapi.jpg" width="300" alt="Fastapi"  />
+                <a href="https://fastapi.tiangolo.com/">
+                    <img src="./logo/fastapi.jpg" width="300" alt="Fastapi" />
+                </a>
               
             </div>
             <div class="logo">
-                <img src="./logo/mongodb.png" width="300" alt="MongoDB" />
-               
+                <a href="https://www.mongodb.com/">
+                    <img src="./logo/mongodb.png" width="300" alt="MongoDB" />
+                </a>                               
             </div>
             <div class="logo">
-                <img src="./logo/react-logo.webp" width="300" alt="React" />
+                <a href="https://reactjs.org/">
+                    <img src="./logo/react-logo.webp" width="300" alt="React" />
+                </a>
             </div>
             <div class="logo">
-                <img src="./logo/nextjs-logo.webp" width="300" alt="Nextjs"/>
-              
+                <a href="https://nextjs.org/">
+                    <img src="./logo/nextjs-logo.webp" width="300" alt="Nextjs"/>
+                </a>               
             </div>
             <div class="logo">
-                <img src="./logo/tailwind.png" width="300" alt="tailwind"  />
-               
+                <a href="https://tailwindcss.com/">
+                    <img src="./logo/tailwind.png" width="300" alt="tailwind"  />
+                </a>
             </div>
             <div class="logo">
-                <img src="./logo/Redis-Logo.wine.png" width="300" alt="Redis" />
+                <a href="https://redis.io/">              
+                    <img src="./logo/Redis-Logo.wine.png" width="300" alt="Redis" />
+                </a>  
             </div>
             <div class="logo">
-                <img src="./logo/DigitalOcean-logo.webp" width="300" alt="Digital Ocean"/>
+                <a href="https://www.digitalocean.com/">
+                    <img src="./logo/DigitalOcean-logo.webp" width="300" alt="Digital Ocean"/>
+                </a>
             </div>
             <div class="logo">
-                <img src="./logo/heroku.png" width="300" alt="Heroku" />
+                <a href="https://www.heroku.com/">
+                    <img src="./logo/heroku.png" width="300" alt="Heroku" />
+                </a>
             </div>
             <div class="logo">
-                <img src="./logo/netlify.png" width="300" alt="Netlify" />
+                <a href="https://www.netlify.com/">
+                    <img src="./logo/netlify.png" width="300" alt="Netlify" />
+                </a>
             </div>
             <div class="logo">
-                <img src="./logo/sendgrid.png" width="300" alt="SendGrid" />
+                <a href="https://sendgrid.com/">
+                    <img src="./logo/sendgrid.png" width="300" alt="SendGrid" />
+                </a>                
             </div>
             <div class="logo">
-                <img src="./logo/chartjs.jpeg" width="300" alt="Chartjs" />
+                <a href="https://www.chartjs.org/">
+                    <img src="./logo/chartjs.jpeg" width="300" alt="Chartjs" />
+                </a>                
             </div>
         </div>
 
@@ -273,32 +279,39 @@ s<!doctype html>
         
     </section>
 
-    <section id="contact" class=" min-h-screen text-gray-700 flex flex-col justify-center items-center p-10">
+    <section id="contact" class=" min-h-screen text-gray-700 flex flex-col justify-center items-center md:p-10">
         <h2 class="text-center text-5xl">Contact/About</h2>
-        <div class="grid lg:grid-cols-2 gap-1">
+        <div class="sm:flex sm:flex-col md:grid md:grid-cols-2 md:gap-1">
             <div class="flex flex-col justify-start items-start p-10 text-justify">
              
                 <h3 class="text-2xl font-bold">The Author</h3>
-                <p class="my-2">Hello! My name is Marko Aleksendrić and I am the author of this book.</p>
-                <p class="my-2">What can I say? I am a graduate of the University of Belgrade, Serbia, with a PhD and also a Master’s
+                <div>
+                    <img src="./img/marko.png" class="w-full md:w-1/3 md:mx-3 md:my-2 p-1 shadow-lg md:float-left" />
+
+                    <p class="my-2">
+                    Hello! My name is Marko Aleksendrić and I am the author of this book.
+                    I am a graduate of the University of Belgrade, Serbia, with a PhD and also a Master’s
                     degree in Control Engineering. I am a self-taught full-stack developer and former scientist and I work
                     as an analyst in a trade promotion agency.</p>
-                <p class="my-2">
-                    I started my programming journey with Visual Basic and Fortran 77 for numeric simulations.
-                    Upon discovering Python (version 2.3), I started using it for all kinds of automation tasks: building
-                    reporting pipelines and exporting measurement data from instruments into Excel or similar
-                     user friendly or unfriendly reporting tools. Nowadays, I split my time between consulting and analytics,
-                    full-stack web development, and data visualization.
-                </p>
-                <p class="my-2">I want and I have to thank the wonderful Pack Publishing team for giving me this 
-                    opportunity and for being incredibly friendly, professional and kind along the journey. Thank you Aamir, 
-                    Jane, Apeksha, Anamika!
-                </p>
-                <div class="shadow-lg m-5 max-w-sm"><img src="./img/marko.png" class="" /></div>
+                    <p class="my-1">
+                        I started my programming journey with Visual Basic and Fortran 77 for numeric simulations.
+                        Upon discovering Python (version 2.3), I started using it for all kinds of automation tasks: building
+                        reporting pipelines and exporting measurement data from instruments into Excel or similar
+                         user friendly or unfriendly reporting tools. Nowadays, I split my time between consulting and analytics,
+                        full-stack web development, and data visualization.
+                    </p>
+                    <div class="thanks">I want and I have to thank the wonderful Pack Publishing team for giving me this 
+                        opportunity and for being incredibly friendly, professional and kind along the journey. Thank you Aamir, 
+                        Jane, Apeksha, Anamika!</div>
+          
+                </div>
+            
+              
+             
         
 
             </div>
-            <div class="flex flex-col justify-start items-start">
+            <div class="flex flex-col justify-start items-start p-2">
             <form name="contact" method="POST" data-netlify="true">
                 <div class="py-12">
                     <h3 class="text-2xl font-bold">Contact me!</h3>
@@ -308,6 +321,7 @@ s<!doctype html>
                           <span class="text-gray-700">Full name</span>
                           <input
                             type="text"
+                            required
                             name="name"
                             class="
                               mt-0
@@ -325,6 +339,7 @@ s<!doctype html>
                           <input
                             type="email"
                             name="email"
+                            required
                             class="
                               mt-0
                               block
@@ -349,6 +364,7 @@ s<!doctype html>
                               focus:ring-0 focus:border-black
                             "
                             name="collaboration"
+                            required
                           >
                             <option>Consulting</option>
                             <option>Data Analytics, Visualization and similar</option>
@@ -360,6 +376,7 @@ s<!doctype html>
                         <label class="block">
                           <span class="text-gray-700">Please specify additional details</span>
                           <textarea
+                            required
                             class="
                               mt-0
                               block
@@ -383,22 +400,22 @@ s<!doctype html>
         
        
     </section>
-    <footer class=" bg-ftBlue text-white flex flex-row justify-between p-10">
+    <footer class=" bg-ftBlue text-white flex flex-col md:flex-row justify-between p-10">
         <div>
-            <ul>
-                <li><a href="https://www.packt.com">Packt Publishing</a></li>
-                <li><a href="https://www.amazon.com/Modern-Web-Development-FARM-Stack-ebook/dp/B0B2DNQCBG">Amazon</a></li>
-                <li>GitHub code</li>
-            </ul>
+            <div>
+                <div><a href="https://www.packt.com">Packt Publishing</a></div>
+                <div><a href="https://www.amazon.com/Modern-Web-Development-FARM-Stack-ebook/dp/B0B2DNQCBG">Amazon</a></div>
+                <div><a href="https://github.com/PacktPublishing/Full-Stack-FastAPI-React-and-MongoDB">Book Code (GitHub)</a></div>
+            </div>
         </div>
-        <div class="flex flex-col justify-start items-center">
-            <ul>
-                <li>Email 1: aleksendricATgmail.com</li>
-                <li>Email 2: freethrowrsATgmail.com</li>
-                <li><a href="https://www.linkedin.com/in/aleksendric/">LinkedIn</a></li>
-                <li>Web site: <a href="https://www.freethrow.rs">freethrow.rs</a></li>
-                <li>Twitter: <a href="https://twitter.com/thefreethrow5">@thefreethrow5</a></li>
-            </ul>
+        <div class="">
+            <div>
+                <div><span class="email">aleksendric^gmail.com</span></div>
+                <div><span class="email">freethrowrs^gmail.com</span></div>
+                <div><a href="https://www.linkedin.com/in/aleksendric/" class="mx-0">LinkedIn</a></div>
+                <div>Personal website: <a href="https://www.freethrow.rs">freethrow.rs</a></div>
+                <div>Twitter: <a href="https://twitter.com/thefreethrow5">@thefreethrow5</a></div>
+            </div>
         </div>
 
     </footer>
