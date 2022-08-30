@@ -13,7 +13,7 @@
         @apply pt-12 mx-0 md:mx-auto
     }
     h2,h3 {
-        @apply font-Fira
+        @apply font-Fira mt-3
     }
 
     .btn {
@@ -59,6 +59,6 @@
     }
 
     .thanks {
-        @apply  my-8 border border-gray-400 p-3 rounded-md
+        @apply  my-8 border border-gray-400 p-3 rounded-sm
     }
 }
