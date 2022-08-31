@@ -30,7 +30,7 @@
     }
 
     .cta {
-        @apply bg-ftYellow md:mx-6 my-5 text-white font-bold text-lg px-3 py-2 rounded-lg shadow-md border border-black hover:opacity-70 transition-opacity duration-500
+        @apply bg-ftYellow md:mx-6 my-5 text-white text-lg px-3 py-2 rounded-lg shadow-md border border-black hover:opacity-70 transition-opacity duration-500
     }
 
     .hamburger {
