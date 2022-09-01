@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-@layer components {
+@layer base {
     body {
         @apply font-Montserrat
     }
@@ -38,7 +38,7 @@
     }
 
     .chapter {
-        @apply bg-white text-gray-700 p-10 rounded-md max-w-2xl m-2
+        @apply bg-white text-gray-700 p-10 rounded-md max-w-2xl m-2 border-4
     }
 
     .chapter a {
