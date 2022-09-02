@@ -18,7 +18,7 @@
   <link href="css/output.css" rel="stylesheet">
 </head>
 <body class="max-w-[2000] mx-auto relative" x-data="{ open: false }">
-    <div class="m-0 fixed px-10 py-5 top-0 h-18 bg-white  flex flex-row justify-between w-full items-center">
+    <div class="m-0 fixed px-10 py-5 top-0 h-18 bg-white z-50 flex flex-row justify-between w-full items-center">
         <h1 class=" font-Fira text-xl font-bold border-b-4 border-ftYellow">
             <a href="/">The FARM Stack Book</a>
         </h1>
@@ -222,7 +222,7 @@
     </section>
 
     <section id="tech" class=" min-h-screen text-gray-600 flex flex-col justify-center items-center" >
-        <h2 class="p-1 text-3xl text-gray-500 border-b-2 border-ftYellow">Technologies used in the book</h2>
+        <h2 class="pt-4 text-3xl text-gray-500 border-b-2 border-ftYellow">Technologies used in the book</h2>
         <div class="container p-10">
             <p class="my-2">I have tried to use modern and up to date technologies that enable developers and alike to
                 quickly get up and running. FastAPI is an excellent newcomer into the React / MongoDB stacks (MERN, MEAN, PERN) 
@@ -309,11 +309,12 @@
     <section id="contact" class=" min-h-screen text-gray-700 flex flex-col justify-center items-center md:p-10">
         <h2 class="p-1 text-3xl text-gray-500 border-b-2 border-ftYellow">Contact/About</h2>
         <div class="sm:flex sm:flex-col md:grid md:grid-cols-2 md:gap-1">
-            <div class="flex flex-col justify-start items-start p-10 text-justify">
+            <div class="flex flex-col justify-start items-start p-10 text-sm md:text-base">
              
                 <h3 class="text-2xl font-bold">The Author</h3>
-                <div>
-                    <img src="./img/marko.png" class="w-full md:w-1/3 md:mx-3 md:my-2 p-1 shadow-lg md:float-left" />
+                <div class="">
+                    <img src="./img/marko.png"
+                     class="w-full md:w-1/3 md:mx-3 md:my-2 p-1 shadow-lg md:float-left" />
 
                     <p class="my-2">
                     Hello! My name is <a href="https://www.linkedin.com/in/aleksendric/" class=" border-b-2 border-ftYellow">Marko Aleksendrić</a> and I am the author of this book.
@@ -327,6 +328,7 @@
                          user friendly or unfriendly reporting tools. Nowadays, I split my time between consulting and analytics,
                         full-stack web development, and data visualization.
                     </p>
+                    <p class="my-1">My interests include web development, data science, JAM stack technologies and data visualization.</p>
                     <div class="thanks">I want and I have to thank the wonderful Pack Publishing team for giving me this 
                         opportunity and for being incredibly friendly, professional and kind along the journey. Thank you Aamir, 
                         Jane, Apeksha, Anamika!</div>
@@ -350,6 +352,7 @@
                             type="text"
                             required
                             name="name"
+                            autocomplete="off"
                             class="
                               mt-0
                               block
@@ -367,6 +370,7 @@
                             type="email"
                             name="email"
                             required
+                            autocomplete="off"
                             class="
                               mt-0
                               block
@@ -408,6 +412,7 @@
                               mt-0
                               block
                               w-full
+                              rounded-lg
                               px-0.5
                               border-0 border-b-2 border-gray-200
                               focus:ring-0 focus:border-black
@@ -449,6 +454,8 @@
 
 </body>
 <script src="//unpkg.com/alpinejs" defer></script>
+<script async src="//static.getclicky.com/101379096.js"></script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101379096ns.gif" /></p></noscript>
 </html>
 
 
